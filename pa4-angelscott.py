@@ -186,6 +186,9 @@ def dealer_hand(dealerhand, dealersum):
 
 # Game play:
 def main():
+    # Program Purpose
+    print("This program will allow you to play a simplified game of Blackjack with an automated dealer.")
+
     # Creating user's deck of cards, and a list of corresponding points.
     user_deck = making_the_deck()
     user_hand_list = user_hand(user_deck)
@@ -212,7 +215,7 @@ def main():
         # Checking user's status. If they did not reach or exceed 21, dealer will play.
         if user_game == "End":
             print("Game Over.")
-            print("The user's hand:", user_final_hand)
+            print("Your hand:", user_final_hand)
         elif user_game != "End":
             # Creating dealer's deck of cards, and a list of corresponding points.
             dealer_deck = making_the_deck()
@@ -243,7 +246,7 @@ def main():
                     print("Sorry. You lost.")
 
             # Printing the player's hands.
-            print("The user's hand:", user_final_hand)
+            print("Your hand:", user_final_hand)
             print("The dealer's hand:", dealer_final_hand)
 
 
